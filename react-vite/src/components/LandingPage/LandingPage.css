@@ -1,61 +1,126 @@
-.landing-page {
+/* Fade-in for body */
+.dg-body-fade {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* MAIN CONTAINER */
+.dg-landing {
+  position: relative;
+  height: 100vh;
   width: 100%;
-  height: auto;
-  min-height: 100vh;
-  background-color: black;
+  overflow: hidden;
+  background: #000;
   display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
-.land-top-header{
-  background-image: url("https://res.cloudinary.com/dl6ls3rgu/image/upload/v1762660164/rs_w_1023_m_hstkqj.webp");
-  background-size: cover;       /* makes it cover the entire div */
-  background-position: bottom;  /* keeps it centered */
-  background-repeat: no-repeat; /* prevents tiling */
-  width: 100%;                  /* full width */
-  height: 660px;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-.land-main-title{
-text-align: center;
-color:white;
-font-size: 36px;
-}
-.land-main-subtitle{
-  text-align: center;
-  color:white;
-  font-size: 70px;
-
-}
-.land-middle-follow-text{
-  color: #cccccc8f;
-  text-align: center;
-  padding-top: 40px;
-  font-size: 40px;
-}
-.land-middle-contactus{
-  color: #cccccc8f;
-  text-align: center;
-  padding-top: 40px;
-  font-size: 40px;
-}
-.facebook-icon {
-  color: #c7c7c7; /* Facebook blue */
-  font-size: 2.5rem;
-  cursor: pointer;
-  transition: transform 0.2s;
-
-}
-
-.facebook-icon:hover {
-  transform: scale(1.1);
-}
-.land-face-anchor{
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+/* GRID OVERLAY */
+.dg-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(200px); }
+}
+
+/* FLOATING PARTICLES */
+.dg-particles {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1), transparent 60%);
+  animation: pulse 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.15; transform: scale(1); }
+  100% { opacity: 0.35; transform: scale(1.15); }
+}
+
+/* HERO IMAGE */
+.dg-hero-img {
+  position: absolute;
+  height: 75%;
+  object-fit: contain;
+  z-index: 2;
+  animation: heroFloat 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(255,255,255,0.3));
+}
+
+@keyframes heroFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* HERO TEXT */
+.dg-hero-content {
+  position: absolute;
+  bottom: 10px;
+  z-index: 3;
+  text-align: center;
+}
+
+.dg-title {
+  font-size: 4rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px #00d0ff;
+  margin-bottom: 10px;
+}
+
+.dg-subtitle {
+  color: #b8eaff;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.dg-cta {
   display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dg-btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.dg-btn-primary {
+  background: #00d0ff;
+  color: #000;
+  box-shadow: 0 0 15px #00d0ff;
+}
+
+.dg-btn-primary:hover {
+  box-shadow: 0 0 30px #00e5ff;
+  transform: scale(1.05);
+}
+
+.dg-btn-outline {
+  border: 2px solid #00d0ff;
+  background: transparent;
+  color: #00d0ff;
+}
+
+.dg-btn-outline:hover {
+  background: #00d0ff;
+  color: #000;
+  transform: scale(1.05);
 }

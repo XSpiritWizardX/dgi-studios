@@ -7,7 +7,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer/Footer";
 // import CookieBanner from "../components/Compliance/CookieBanner/CookieBanner";
 import ScrollToTop from "./ScrollToTop";
-import MazeTransition from "../components/MazeTransition/MazeTransition";
+// import MazeTransition from "../components/MazeTransition/MazeTransition";
 
 export default function Layout() {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ export default function Layout() {
 
         {/* 🔹 This ensures scroll resets on every route change */}
         <ScrollToTop />
-        <MazeTransition /> {/* 🐺 Page transition animation */}
+        {/* <MazeTransition />  */}
 
         {isLoaded && <Outlet />}
         <Modal />
