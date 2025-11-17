@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FaUserCircle, FaChevronDown } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import { thunkLogout } from "../../redux/session";
@@ -206,9 +206,14 @@ function ProfileButton() {
 
   return (
     <>
-      <button className="profile-button" onClick={toggleMenu}>
-        <FaUserCircle />
+     <button className="profile-button" onClick={toggleMenu}>
+        <img
+          src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1762819907/ChatGPT_Image_Nov_10_2025_06_00_50_PM_lwbkgg.png"
+          alt="Profile Icon"
+          className="profile-avatar"
+        />
       </button>
+
 
       {isVisible && (
         <div
@@ -241,11 +246,11 @@ function ProfileButton() {
                 {/* <span className="span-profile"></span> */}
               {/* Public Links */}
               <NavLink to="/" onClick={toggleMenu} className="public-link">Home</NavLink>
-              <NavLink to="/products" onClick={toggleMenu} className="public-link">Products</NavLink>
+              <NavLink to="/solutions" onClick={toggleMenu} className="public-link">Solutions</NavLink>
               {/* <NavLink to="/blog" onClick={toggleMenu} className="public-link">Blog</NavLink> */}
               {/* <NavLink to="/company" onClick={toggleMenu} className="public-link">Company</NavLink> */}
               <NavLink to="/contact" onClick={toggleMenu} className="public-link">Contact</NavLink>
-              <NavLink to="/cart" onClick={toggleMenu} className="public-link">Cart</NavLink>
+              {/* <NavLink to="/cart" onClick={toggleMenu} className="public-link">Cart</NavLink> */}
               <span className="span-profile"></span>
               </div>
               {sections.map((section) => {
@@ -267,7 +272,7 @@ function ProfileButton() {
                           <NavLink
                             key={link.to}
                             to={link.to}
-                            className="dropdown-link"
+                            className="dropdown-link public-link"
                             onClick={() => setShowMenu(false)}
                           >
                             {link.label}
@@ -282,10 +287,10 @@ function ProfileButton() {
             </>
           ) : (
             <div className="profile-dropdown-items">
-              <NavLink to="/login" onClick={toggleMenu} className="public-link">Login / Signup</NavLink>
+              {/* <NavLink to="/login" onClick={toggleMenu} className="public-link">Login / Signup</NavLink>
               <Clock className="clock"/>
-              <span className="span-profile"></span>
-              {/* Public Links */}
+              <span className="span-profile"></span> */}
+              {/* Public Links
                <div className="search-bar-container">
                   <input
                     className="search-bar"
@@ -294,14 +299,14 @@ function ProfileButton() {
                   />
               <NavLink to="/advanced-search" onClick={toggleMenu} className="public-link">Advanced Search</NavLink>
                 </div>
-                <span className="span-profile"></span>
+                <span className="span-profile"></span> */}
 
               <NavLink to="/" onClick={toggleMenu} className="public-link">Home</NavLink>
-              <NavLink to="/products" onClick={toggleMenu} className="public-link">Products</NavLink>
+              <NavLink to="/solutions" onClick={toggleMenu} className="public-link">Solutions</NavLink>
               {/* <NavLink to="/blog" onClick={toggleMenu} className="public-link">Blog</NavLink> */}
-              <NavLink to="/company" onClick={toggleMenu} className="public-link">Company</NavLink>
+              {/* <NavLink to="/company" onClick={toggleMenu} className="public-link">Company</NavLink> */}
               <NavLink to="/contact" onClick={toggleMenu} className="public-link">Contact</NavLink>
-              <NavLink to="/cart" onClick={toggleMenu} className="public-link">Cart</NavLink>
+              {/* <NavLink to="/cart" onClick={toggleMenu} className="public-link">Cart</NavLink> */}
             </div>
           )}
         </div>

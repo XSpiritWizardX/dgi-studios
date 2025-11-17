@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   padding-bottom: .2rem;
   background-color: black;
   border-bottom: 2px solid grey;
-  z-index: 1000;
+  z-index: 1400;
 }
 
 /* ---------- LOGO ---------- */
@@ -191,7 +191,6 @@ margin-right: 5%;
 .nav-bar-text-shop-link{
   font-size: 24px;
   padding: 10px 0;
-  color: #fff;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
@@ -199,4 +198,8 @@ margin-right: 5%;
   color: #7ea2b4;
   text-decoration: underline;
   transform: scale(1.5);
+}
+.profile-button{
+  background-image: url("https://res.cloudinary.com/dl6ls3rgu/image/upload/v1762819908/ChatGPT_Image_Nov_10_2025_05_59_28_PM_r51opu.png");
+
 }

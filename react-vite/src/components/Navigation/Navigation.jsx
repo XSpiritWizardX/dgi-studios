@@ -16,32 +16,25 @@ function Navigation() {
   return (
     <div className={`navigation-container`}>
       {/* Logo */}
-      <NavLink to="/" className="nav-bar-logo">
-        <img
-          className="nav-logo"
-          src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1762819907/ChatGPT_Image_Nov_10_2025_06_00_50_PM_lwbkgg.png"
-          alt="Logo"
-        />
-      </NavLink>
+          <ProfileButton  />
+
 
       {/* Links */}
       <nav className={`page-links-container-top`}>
         <div className="page-links-cont">
           <div className="link-word-group">
             <NavLink to="/" className="nav-bar-text">Home</NavLink>
-            <NavLink to="/products" className="nav-bar-text">Products</NavLink>
+            <NavLink to="/solutions" className="nav-bar-text">Solutions</NavLink>
             {/* <NavLink to="/company" className="nav-bar-text">Company</NavLink> */}
             {/* <NavLink to="/blog" className="nav-bar-text">Blog</NavLink> */}
             <NavLink to="/contact" className="nav-bar-text">Contact</NavLink>
-            <NavLink to="/cart" className="nav-bar-text">Cart</NavLink>
+            {/* <NavLink to="/cart" className="nav-bar-text">Cart</NavLink> */}
           </div>
         </div>
       </nav>
 
       <div className="icons-group">
-        <a href="tel:+5742722530" className="nav-bar-text-phone-link">
-          (269) 506-5112
-        </a>
+
 
         {/* Cart Icon + Badge */}
         <span className="cart-icon-wrapper">
@@ -56,7 +49,6 @@ function Navigation() {
         </span>
 
         {/* Profile stays the same */}
-        <ProfileButton className="nav-bar-text-shop-link" />
 
         {/* Drawer */}
         {/* <CartDrawer open={showCart} onClose={closeCart} /> */}

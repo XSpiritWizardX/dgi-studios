@@ -34,8 +34,8 @@ export default function LandingPage() {
         </p>
 
         <div className="dg-cta">
-          <button onClick={() => navigate("/services")} className="dg-btn dg-btn-primary">
-            View Services
+          <button onClick={() => navigate("/solutions")} className="dg-btn dg-btn-primary">
+            View Solutions
           </button>
           <button onClick={() => navigate("/contact")} className="dg-btn dg-btn-outline">
             Contact Us

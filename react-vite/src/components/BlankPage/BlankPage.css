@@ -5,10 +5,14 @@ align-items: center;
 justify-content: center;
 gap: 30px;
 padding: 20px;
-margin-top: 9%;
-min-height: 80vh;
+min-height: 95vh;
+background-color: black;
 }
+.blank h1,
+.blank h3 {
+      color: #aaaaaa;
 
+}
 .blank-button{
 width: 200px;
 border-radius: 20px;
@@ -19,13 +23,15 @@ padding: 10px;
 }
 .blank-button-text{
 text-decoration: none;
-color: black;
+color: rgb(121, 121, 121);
 }
 .act-tit{
     font-size: 30px;
+    color: rgb(121, 121, 121);
 }
 .act-text{
     font-size: 26px;
+    color: rgb(121, 121, 121);
 }
 
 .logout-btn{

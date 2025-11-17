@@ -1226,7 +1226,7 @@ def seed_enterprise():
             "type": "Tier",
             "name": "Enterprise Tier 2 - Factory Dashboard System",
             "description": "Factory KPIs, equipment uptime, production metrics, shift reports, IoT sensor integration.",
-            "price": 105000
+            "price": 125000
         },
         {
             "sku": "DG-ENT-T-003",
@@ -1234,7 +1234,7 @@ def seed_enterprise():
             "type": "Tier",
             "name": "Enterprise Tier 3 - ERP-Lite System",
             "description": "Enterprise resource management with modules for HR, finances, warehouse, inventory, dashboards, permissions.",
-            "price": 120000
+            "price": 160000
         },
 
         # ============================================================
@@ -1270,7 +1270,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "Corporate BI Dashboard",
             "description": "High-level business intelligence dashboards for executives.",
-            "price": 12500
+            "price": 18500
         },
         {
             "sku": "DG-ENT-A-005",
@@ -1290,7 +1290,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "IoT Sensor Hub",
             "description": "Connect IoT sensors for factory, logistics, temperature, vibration, or environmental readings.",
-            "price": 25000
+            "price": 325000
         },
         {
             "sku": "DG-ENT-A-007",
@@ -1298,7 +1298,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "Predictive Maintenance Engine",
             "description": "Machine learning system to predict machine failures using sensor & usage data.",
-            "price": 35000
+            "price": 135000
         },
         {
             "sku": "DG-ENT-A-008",
@@ -1322,7 +1322,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "Document Control System",
             "description": "ISO-compliant document versioning, approvals, signatures.",
-            "price": 18000
+            "price": 28000
         },
         {
             "sku": "DG-ENT-A-011",
@@ -1338,7 +1338,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "Quality Control System",
             "description": "QC inspections, audits, batch tracking, issue reporting.",
-            "price": 20000
+            "price": 215000
         },
         {
             "sku": "DG-ENT-A-013",
@@ -1346,7 +1346,7 @@ def seed_enterprise():
             "type": "Add-On",
             "name": "Asset Tracking System",
             "description": "Track tools, machinery, and equipment using QR/RFID.",
-            "price": 18000
+            "price": 38000
         },
         {
             "sku": "DG-ENT-A-014",
@@ -1382,15 +1382,15 @@ def seed_scientific():
             "type": "Tier",
             "name": "Scientific Tier 1 - Research Utility",
             "description": "Basic research tools, lab calculators, data loggers, visualization charts, statistical helpers.",
-            "price": 30000
+            "price": 50000
         },
         {
             "sku": "DG-SCI-T-002",
             "category": "Scientific Software",
             "type": "Tier",
             "name": "Scientific Tier 2 - Modeling & Simulation Suite",
-            "description": "Physics/chemistry/biology simulation engines, formulas, complex algorithms, experiment modeling.",
-            "price": 120000
+            "description": "Single simulation engine, formulas, complex algorithms, experiment modeling.",
+            "price": 320000
         },
         {
             "sku": "DG-SCI-T-003",
@@ -1398,7 +1398,7 @@ def seed_scientific():
             "type": "Tier",
             "name": "Scientific Tier 3 - Enterprise Research Platform",
             "description": "Large-scale scientific platform: datasets, AI models, lab workflow, HPC integration, cloud computing.",
-            "price": 350000
+            "price": 850000
         },
 
         # ============================================================
@@ -1409,7 +1409,7 @@ def seed_scientific():
             "category": "Scientific Software",
             "type": "Add-On",
             "name": "Simulation Engine",
-            "description": "Physics or chemistry simulation engine with live visualization.",
+            "description": "Scientific simulation engine with live visualization.",
             "price": 35000
         },
         {
@@ -1418,7 +1418,7 @@ def seed_scientific():
             "type": "Add-On",
             "name": "Molecular Modeling",
             "description": "3D molecule viewer, interaction forces, bonding predictions.",
-            "price": 25000
+            "price": 125000
         },
         {
             "sku": "DG-SCI-A-003",
@@ -1426,7 +1426,7 @@ def seed_scientific():
             "type": "Add-On",
             "name": "Genome Analysis Tool",
             "description": "DNA/RNA sequence analysis, mutation detection, alignment algorithms.",
-            "price": 55000
+            "price": 555000
         },
         {
             "sku": "DG-SCI-A-004",
@@ -1434,7 +1434,7 @@ def seed_scientific():
             "type": "Add-On",
             "name": "AI Lab Assistant",
             "description": "AI-driven insights, formula predictions, result interpretations.",
-            "price": 30000
+            "price": 3000000
         },
         {
             "sku": "DG-SCI-A-005",
@@ -1458,7 +1458,7 @@ def seed_scientific():
             "type": "Add-On",
             "name": "Lab Equipment Integrations",
             "description": "Data ingestion from microscopes, analyzers, sensors, or lab robotics.",
-            "price": 30000
+            "price": 285000
         },
         {
             "sku": "DG-SCI-A-008",
@@ -1474,7 +1474,7 @@ def seed_scientific():
             "type": "Add-On",
             "name": "3D Biology Simulation",
             "description": "Cellular, organ, or biome-level 3D visualization and interactions.",
-            "price": 60000
+            "price": 600000
         },
         {
             "sku": "DG-SCI-A-010",

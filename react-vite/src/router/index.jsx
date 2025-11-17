@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
 
       // Public pages
       { path: "/", element: <LandingPage /> },
-      { path: "/products", element: <ProductsPage /> },
+      { path: "/solutions", element: <ProductsPage /> },
 
       { path: "coming-soon", element: <BlankPage /> },
       { path: "*", element: <BlankPage /> },
